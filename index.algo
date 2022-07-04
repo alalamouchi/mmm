@@ -1,0 +1,31 @@
+ALGORITHM checkpoints_1
+VAR 
+    sentence: STRING
+    CHAR-nbre , words _nbre , i : INTEGER:=0;
+
+    set_declarations
+BEGIN
+    REPEAT 
+    READ( sentence)
+    UNTIL( sentence==="" ||sentence===" ")
+    WHILE( sentence[i]<>".") DO
+    CHAR_nbre:=Char _nbre+1;
+    IF ( sentence [i]==="a" ||sentence [i]==="A"||
+    sentence[i]==="e"||sentence==="E"||
+    sentence[i]==="y" ||sentence[i]==="Y"||
+    sentence[i]==="u"||sentence[i]==="U"||
+    sentence[i]==="i" ||sentence"I"||sentence[i]===
+    "o"||sentence[i]==="O") THEN
+    words_nbre :=words_nbre+1;
+    FIND _ if
+    i:=i+1;
+    END_WHILE
+    CHAR_nbre :=CHAR_nbre +1;
+    if(sentence[i-1]<>" ")THEN
+    words_nbre:= words_nbre +1;
+    END-IF
+    WRILE ("length is :" , CHAR_nbre, "vowe IS nbre is :",
+    words_nbre,"words nbre is :",words_nbre);
+
+    
+END
